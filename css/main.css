@@ -1,0 +1,31 @@
+.manc-purple {background-color: #6b2c91;}
+.manc-text-purple {color: #6b2c91;}
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif;
+}
+
+.w3-bar,h1,button {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fa-file,.fa-users,.fa-microchip,.fa-list,.fa-image,.fa-history,.fa-check,.fa-pencil,.fa-thumbs-up,.fa-exclamation {
+  font-size:200px;
+}
+
+header {
+  background-size: cover;
+  height: 300px;
+}
+
+a:link {
+  color: blue;
+}
+
+a:hover, a:visited:hover {
+  color: lightblue;
+}
+
+a:visited {
+  color: darkblue;
+}

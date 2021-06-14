@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+  <title>Reconfigurable FPGA Accelerator Sandboxing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+  header {
+    background-image: url("./pics/sky.jpg");
+    height: auto;
+  }
+  </style>
+</head>
+
+<!-- Body -->
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar manc-purple w3-text-white w3-card w3-left-align w3-large">
+    <a style="color: white;" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large manc-purple" href="javascript:void(0);" onclick="toggleNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href='./index.html' style='color: white;' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Home</a>
+    <a href='./rfas.html' style='color: white;' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>rFAS</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href='./index.html' class='w3-bar-item w3-button w3-padding-large'>Home</a>
+    <a href='./rfas.html' class='w3-bar-item w3-button w3-padding-large'>rFAS</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-light-grey w3-center" style="padding:64px 16px 0px 0px">
+	<h1 class="w3-text-white w3-margin w3-jumbo" style="font-weight: 900;">rFAS</h1>
+	<p class="w3-text-white w3-bold w3-xxlarge">Reconfigurable FPGA Accelerator Sandboxing</p>
+</header>
+
+
+<!-- rfas short description -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About rFAS</h1>
+      <h5 class="w3-padding-32">
+        FPGAs are ideal for number crunching problems that fit dataflow processing model. With accelerator sandboxing the FPGAs provide a platform for executing these models. This platform is developed in the <a href="https://github.com/FPGA-Research-Manchester/fos">FOS - FPGA Operating System project</a>.
+      </h5>
+    </div>
+
+    <div class="w3-third w3-center w3-hide-small">
+      <i class="fa fa-microchip w3-padding-64 manc-text-purple"></i>
+    </div>
+    
+    <img class="w3-border w3-image" src="./pics/rfas_layout.png">
+  </div>
+</div>
+
+
+<!-- descript, cont -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center w3-hide-small">
+      <i class="fa fa-exclamation w3-padding-64 manc-text-purple w3-margin-right"></i>
+    </div>
+    <div class="w3-twothird">
+      <h1>But FPGAs have a huge surface of attack!</h1>
+      <h5>
+      <ul>
+        <li>Remote DPA attacks</li>
+        <li>Aging with corrupted bitstreams</li>
+        <li>Power hammering attacks</li>
+      </ul>
+      For this research we have conducted a study on ring-oscillators and developed a virus scanner called FPGADefender.
+      </h5>
+    </div>
+
+    <img class="w3-image" src="./pics/rfas_scan.png">
+  </div>
+</div>
+
+
+<!-- Goals  -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-twothird">
+      <h1>rFAS Goals</h1>
+      <h5>
+      <ul>
+        <li>Systematic review on possible FPGA attack scenarios</li>
+        <li>Develop mitigation strategies</li>
+        <li>Assessment of mitigation strategies and countermeasures</li>
+        <li>Secure multi-tenancy scenario</li>
+      </ul>
+      </h5>
+    </div>
+
+    <div class="w3-third w3-center w3-hide-small">
+      <i class="fa fa-check w3-padding-64 manc-text-purple w3-margin-right"></i>
+    </div>
+  </div>
+</div>
+
+<!-- publications -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center w3-hide-small">
+      <i class="fa fa-pencil w3-padding-64 manc-text-purple"></i>
+    </div>
+    <div class="w3-twothird">
+      <h1>Publications</h1>
+      <h5 class="w3-padding-32">
+      <ul>
+        <li>
+          Anuj Vaishnav, Khoa Dang Pham, Joseph Powell, Dirk Koch:
+          FOS: A Modular FPGA Operating System for Dynamic Workloads. ACM Trans. Reconfigurable Technol. Syst. 13(4): 20:1-20:28 (2020)
+          <a href="https://dl.acm.org/doi/abs/10.1145/3405794">https://dl.acm.org/doi/abs/10.1145/3405794</a>
+        </li>
+        <li>
+          Tuan Minh La, Kaspar Matas, Nikola Grunchevski, Khoa Dang Pham, Dirk Koch:
+          FPGADefender: Malicious Self-oscillator Scanning for Xilinx UltraScale + FPGAs. ACM Trans. Reconfigurable Technol. Syst. 13(3): 15:1-15:31 (2020)
+          <a href="https://dl.acm.org/doi/abs/10.1145/3402937">https://dl.acm.org/doi/abs/10.1145/3402937</a>
+        </li>
+        <li>
+          Shaza Zeitouni, Jo Vliegen, Tommaso Frassetto, Dirk Koch, Ahmad-Reza Sadeghi, Nele Mentens:
+          Trusted Configuration in Cloud FPGAs. FCCM 2021: 233-241
+          <a href="https://ieeexplore.ieee.org/document/9443664">https://ieeexplore.ieee.org/document/9443664</a>
+        </li>
+        <li>
+          Tuan La, Kaspar Matas, Khoa Dang Pham, Dirk Koch:
+          Securing FPGA Accelerators at the Electrical Level for Multi-tenant Platforms. FPL 2020: 361-362
+          <a href="https://ieeexplore.ieee.org/document/9221607">https://ieeexplore.ieee.org/document/9221607</a>
+        </li>
+        <li>
+          Khoa Dang Pham, Anuj Vaishnav, Joseph Powell, Dirk Koch:
+          A Self-Compilation Flow Demo on FOS - The FPGA Operating System. FPL 2020: 368
+          <a href="https://ieeexplore.ieee.org/document/9221535">https://ieeexplore.ieee.org/document/9221535</a>
+        </li>
+        <li>
+          Tuan La, Kaspar Matas, Joseph Powell, Khoa Dang Pham, Dirk Koch:
+          Demo: A Closer Look at Malicious Bitstreams. FPL 2020: 369
+          <a href="https://ieeexplore.ieee.org/document/9221591">https://ieeexplore.ieee.org/document/9221591</a>
+        </li>
+        <li>
+          Kaspar Matas, Tuan Minh La, Khoa Dang Pham, Dirk Koch:
+          Power-hammering through Glitch Amplification - Attacks and Mitigation. FCCM 2020: 65-69
+          <a href="https://ieeexplore.ieee.org/document/9114608">https://ieeexplore.ieee.org/document/9114608</a>
+        </li>
+        <li>
+          Kaspar Matas, Tuan La, Nikola Grunchevski, Khoa Dang Pham, Dirk Koch:
+          Invited Tutorial: FPGA Hardware Security for Datacenters and Beyond. FPGA 2020: 11-20
+          <a href="https://dl.acm.org/doi/abs/10.1145/3373087.3375390">https://dl.acm.org/doi/abs/10.1145/3373087.3375390</a>
+        </li>
+        <li>
+          Kristiyan Manev, Anuj Vaishnav, Dirk Koch:
+          Unexpected Diversity: Quantitative Memory Analysis for Zynq UltraScale+ Systems. FPT 2019: 179-187
+          <a href="https://ieeexplore.ieee.org/document/8977835">https://ieeexplore.ieee.org/document/8977835</a>
+        </li>
+        <li>
+          Khoa Dang Pham, Kyriakos Paraskevas, Anuj Vaishnav, Andrew Attwood, Malte Vesper, Dirk Koch
+          ZUCL 2.0: Virtualised Memory and Communication for ZYNQ UltraScale+ FPGAs FSP 2019
+          <a href="https://ieeexplore.ieee.org/document/8891818">https://ieeexplore.ieee.org/document/8891818</a>
+        </li>
+      </ul>
+      </h5>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Acknowledgements  -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Acknowledgements</h1>
+      <h5>
+      This work is kindly supported by the National Cyber Security Centre of the UK through the project rFAS - reconfigurable FPGA Accelerator Sandboxing (grant agreement 4212204/RFA 15971)
+      </h5>
+    </div>
+
+    <div class="w3-third w3-center w3-hide-small">
+      <i class="fa fa-thumbs-up w3-padding-64 manc-text-purple w3-margin-right"></i>
+    </div>
+  </div>
+</div>
+
+<!-- spacer entry -->
+<div class="w3-container w3-black w3-center w3-padding-64 w3-dark-grey">
+  <a href="https://www.manchester.ac.uk/"><img class="w3-image" src="./pics/logo_manchester.png"></a>
+  <a href="https://www.ukrise.org/"><img class="w3-image" src="./pics/logo_rise.png"></a>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity">  
+  <div class="manc-text-purple w3-xlarge w3-padding-32">
+    <a href="https://www.facebook.com/TheUniversityOfManchester"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+   <!-- <a href="https://www.instagram.com/officialuom/"><i class="fa fa-instagram w3-hover-opacity"></i></a> -->
+   <!-- <a href="https://twitter.com/OfficialUoM"><i class="fa fa-twitter w3-hover-opacity"></i></a> -->
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+</body>
+</html>
+
+
+
